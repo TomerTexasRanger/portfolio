@@ -1,0 +1,510 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* custom properties */
+
+:root {
+  --ff-headline: 'Open Sans', sans-serif;
+  --ff-paragraph: 'Montserrat', sans-serif;
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #e7efef;
+  --clr-dark: #182323;
+  --clr-mild: #669999;
+  --clr-strong: #996680;
+  --clr-mid: #996666;
+  --clr-accent: #998066;
+
+  --fs-h1: 4rem;
+  --fs-h2: 2.75rem;
+  --fs-h3: 1.75rem;
+  --fs-body: 1rem;
+  --fs-p: 1.7rem;
+
+  --bs-all: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    -0.125em -0.125em 0.25em rgba(0, 0, 0, 0.5);
+
+  --ts-all: 0.04em 0.04em 0.05em #00000069;
+}
+
+/*//////////// For  sm /////////////////  */
+/* header */
+header {
+  box-shadow: var(--bs-all);
+}
+header nav ul {
+  margin: 0 auto;
+}
+
+header nav ul li {
+  margin: 1rem auto;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+}
+
+/* Intro  */
+h1,
+h2,
+h3 {
+  color: var(--clr-light);
+  text-shadow: var(--ts-all);
+  font-family: var(--ff-headline);
+  font-weight: bold;
+}
+h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 2rem;
+}
+
+body {
+  background: var(--clr-light);
+  font-family: var(--ff-paragraph);
+}
+
+.intro-section {
+  background: var(--clr-mid);
+  padding: 0.7rem;
+  text-align: center;
+  box-shadow: var(--bs-all);
+}
+
+.profile-title .main-title {
+  margin: 0.7rem 0;
+}
+
+.profile-title .sec-title {
+  color: var(--clr-light);
+  background: var(--clr-strong);
+  padding: 0.1rem 0.1rem;
+  box-shadow: var(--bs-all);
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.intro-section .profile-picture {
+  box-shadow: var(--bs-all);
+  padding: 0;
+}
+
+.intro-section .intro-section-contact {
+  font-size: 1rem;
+}
+.intro-section .intro-section-contact ul {
+  text-align: start;
+  list-style-type: none;
+}
+
+.intro-section .intro-section-contact ul li {
+  margin: 1.3rem 0;
+  font-size: 1.1rem;
+}
+
+.intro-section .intro-section-contact ul li a {
+  font-size: 1.2rem;
+  color: blue;
+}
+
+.intro-section .intro-section-social {
+  margin-top: 2rem;
+}
+
+.intro-section .intro-section-social ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.intro-section .intro-section-social ul li {
+  font-size: 4rem;
+}
+
+.intro-section .intro-section-social ul li .fa-linkedin {
+  color: #0e76a8;
+}
+
+.intro-section .intro-section-social ul li .fa-github-square {
+  color: black;
+}
+
+.intro-section button {
+  background-color: var(--clr-light);
+  width: 60%;
+  box-shadow: var(--bs-all);
+  font-size: 1.7rem;
+  padding: 0.1rem;
+  font-weight: bold;
+}
+
+/* About  */
+.about-section {
+  margin: 3rem;
+}
+.about-section h2 {
+  color: var(--clr-dark);
+}
+
+.about-section p {
+  margin-top: 1.5rem;
+}
+
+/* Projects */
+
+.projects-section {
+  background: #182323b9;
+  box-shadow: var(--bs-all);
+}
+
+.projects-section h2 {
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.projects-section .project-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects-section .project-group .card {
+  margin: 1rem;
+  padding: 0.5rem;
+  box-shadow: var(--bs-all);
+  background-color: var(--clr-light);
+}
+.card a {
+  box-shadow: var(--bs-all);
+  font-weight: bold;
+  color: var(--clr-light);
+  text-shadow: var(--ts-all);
+  letter-spacing: 2px;
+  background-color: var(--clr-accent);
+}
+.card .open-app {
+  background-color: var(--clr-mild);
+}
+.card .github-repo {
+  background-color: var(--clr-mid);
+}
+header,
+footer {
+  background-color: rgba(51, 51, 51, 0.178);
+}
+
+/*//// Resume ///// */
+.general-details {
+  text-align: center;
+  margin-top: 1.7rem;
+}
+
+.general-details h1 {
+  color: var(--clr-dark);
+}
+
+.general-details p {
+  background-color: var(--clr-mid);
+  color: var(--clr-light);
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  box-shadow: var(--bs-all);
+  text-shadow: var(--ts-all);
+}
+
+.languages h3,
+.ocupations h3,
+.education h3,
+.military h3 {
+  color: var(--clr-mid);
+}
+
+.languages,
+.ocupations,
+.education,
+.military {
+  line-height: 1.7;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+/*/////////// MD ////////// */
+@media (min-width: 768px) {
+  .intro-section {
+    background: var(--clr-mid);
+    padding: 0.7rem;
+    box-shadow: var(--bs-all);
+    display: grid;
+    grid-template-areas:
+      'pic p-t'
+      'pic con';
+  }
+
+  .profile-title {
+    grid-area: p-t;
+  }
+
+  .profile-title .main-title {
+    margin: 0.7rem 0;
+  }
+
+  .profile-title .sec-title {
+    color: var(--clr-light);
+    background: var(--clr-strong);
+    padding: 0.1rem 0.1rem;
+    box-shadow: var(--bs-all);
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+
+  .intro-section .profile-picture {
+    box-shadow: var(--bs-all);
+    padding: 0;
+    max-width: 100%;
+    grid-area: pic;
+  }
+
+  .intro-section .intro-section-contact {
+    font-size: 1rem;
+    grid-area: con;
+  }
+  .intro-section .intro-section-contact ul {
+    text-align: start;
+    list-style-type: none;
+  }
+
+  .intro-section .intro-section-contact ul li {
+    margin: 1.3rem 0;
+    font-size: 1.1rem;
+  }
+
+  .intro-section .intro-section-contact ul li a {
+    font-size: 1.2rem;
+    color: blue;
+  }
+
+  .intro-section .intro-section-social {
+    margin-top: 2rem;
+  }
+
+  .intro-section .intro-section-social ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
+  .intro-section .intro-section-social ul li {
+    font-size: 4rem;
+  }
+
+  .intro-section .intro-section-social ul li .fa-linkedin {
+    color: #0e76a8;
+  }
+
+  .intro-section .intro-section-social ul li .fa-github-square {
+    color: black;
+  }
+
+  .intro-section button {
+    background-color: var(--clr-light);
+    width: 60%;
+    box-shadow: var(--bs-all);
+    font-size: 1.7rem;
+    padding: 0.1rem;
+    font-weight: bold;
+    margin-top: 4rem;
+  }
+
+  /* Projects */
+
+  .projects-section {
+    background: #182323b9;
+    box-shadow: var(--bs-all);
+  }
+
+  .projects-section h2 {
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+
+  .projects-section .project-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+/*/////////////// LG  ///////////*/
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: var(--fs-h1);
+  }
+  h2 {
+    font-size: var(--fs-h2);
+  }
+  h3 {
+    font-size: var(--fs-h3);
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  .intro-section {
+    background: var(--clr-mid);
+    padding: 0.7rem;
+    box-shadow: var(--bs-all);
+    display: grid;
+    grid-template-areas:
+      'pic p-t'
+      'pic con';
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .profile-title {
+    grid-area: p-t;
+  }
+
+  .profile-title .main-title {
+    margin: 0.7rem 0;
+  }
+
+  .profile-title .sec-title {
+    color: var(--clr-light);
+    background: var(--clr-strong);
+    padding: 0.1rem 0.1rem;
+    box-shadow: var(--bs-all);
+    margin: 1rem 0;
+    font-size: 1.7rem;
+  }
+
+  .intro-section .profile-picture {
+    box-shadow: var(--bs-all);
+    padding: 0;
+    max-width: 100%;
+    grid-area: pic;
+    margin-left: 3rem;
+  }
+
+  .intro-section .intro-section-contact {
+    font-size: 1rem;
+    grid-area: con;
+  }
+  .intro-section .intro-section-contact ul {
+    text-align: start;
+    list-style-type: none;
+  }
+
+  .intro-section .intro-section-contact ul li {
+    margin: 1.3rem 0;
+    font-size: 1.6rem;
+  }
+
+  .intro-section .intro-section-contact ul li a {
+    font-size: 1.6rem;
+    color: blue;
+    margin-left: 1rem;
+  }
+
+  .intro-section .intro-section-social {
+    margin-top: 2rem;
+  }
+
+  .intro-section .intro-section-social ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
+  .intro-section .intro-section-social ul li {
+    font-size: 4rem;
+  }
+
+  .intro-section .intro-section-social ul li .fa-linkedin {
+    color: #0e76a8;
+  }
+
+  .intro-section .intro-section-social ul li .fa-github-square {
+    color: black;
+  }
+
+  .intro-section button {
+    background-color: var(--clr-light);
+    width: 60%;
+    box-shadow: var(--bs-all);
+    font-size: 1.7rem;
+    padding: 0.1rem;
+    font-weight: bold;
+    margin-top: 4rem;
+  }
+
+  /* Projects */
+
+  .projects-section {
+    background: #182323b9;
+    box-shadow: var(--bs-all);
+  }
+
+  .projects-section h2 {
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+
+  .projects-section .project-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  /*//// Resume ///// */
+
+  body {
+    font-size: 1.4rem;
+  }
+  .general-details {
+    text-align: center;
+    margin-top: 1.7rem;
+  }
+
+  .general-details h1 {
+    color: var(--clr-dark);
+  }
+
+  .general-details p {
+    background-color: var(--clr-mid);
+    color: var(--clr-light);
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    box-shadow: var(--bs-all);
+    text-shadow: var(--ts-all);
+    padding: 0.3rem;
+  }
+
+  .languages h3,
+  .ocupations h3,
+  .education h3,
+  .military h3 {
+    color: var(--clr-mid);
+  }
+
+  .languages,
+  .ocupations,
+  .education,
+  .military {
+    line-height: 1.7;
+    padding: 0.5rem;
+    margin: 1rem;
+  }
+}
