@@ -7,8 +7,8 @@
 /* custom properties */
 
 :root {
-  --ff-headline: 'Open Sans', sans-serif;
-  --ff-paragraph: 'Montserrat', sans-serif;
+  --ff-headline: "Open Sans", sans-serif;
+  --ff-paragraph: "Montserrat", sans-serif;
   --fw-reg: 300;
   --fw-bold: 900;
 
@@ -242,8 +242,8 @@ footer {
     box-shadow: var(--bs-all);
     display: grid;
     grid-template-areas:
-      'pic p-t'
-      'pic con';
+      "pic p-t"
+      "pic con";
   }
 
   .profile-title {
@@ -362,8 +362,8 @@ footer {
     box-shadow: var(--bs-all);
     display: grid;
     grid-template-areas:
-      'pic p-t'
-      'pic con';
+      "pic p-t"
+      "pic con";
     grid-template-columns: 1fr 2fr;
   }
 
