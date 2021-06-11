@@ -178,6 +178,7 @@ body {
   padding: 0.5rem;
   box-shadow: var(--bs-all);
   background-color: var(--clr-light);
+  min-height: 700px;
 }
 .card a {
   box-shadow: var(--bs-all);
@@ -186,6 +187,11 @@ body {
   text-shadow: var(--ts-all);
   letter-spacing: 2px;
   background-color: var(--clr-accent);
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card .open-app {
   background-color: var(--clr-mild);
